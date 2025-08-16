@@ -1,0 +1,11 @@
+[project]
+name = "themesbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.21.0",
+    "envparse>=0.2.0",
+    "tortoise-orm>=0.25.1",
+]
