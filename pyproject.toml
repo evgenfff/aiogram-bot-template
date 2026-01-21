@@ -1,25 +1,12 @@
 [project]
-name = "themesbot"
+name = "incques"
 version = "0.1.0"
 description = "Add your description here"
-authors = ["Evgeny N. <Evgeny_Novlkov.t.me>"]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
-    "aiogram>=3.21.0",
-    "envparse>=0.2.0",
-    "tortoise-orm>=0.25.1",
+    "aiogram>=3.24.0",
+    "pillow>=12.1.0",
+    "python-dotenv>=1.2.1",
+    "tortoise-orm>=0.25.3",
 ]
-
-[dependency-groups]
-dev = [
-    "black>=25.1.0",
-    "isort>=6.0.1",
-    "ruff>=0.12.9",
-]
-
-[tool.black]
-line-length = 79
-
-[tool.ruff.lint.per-file-ignores]
-"__init__.py" = ["F401", "F403"]
