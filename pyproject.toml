@@ -1,0 +1,20 @@
+[project]
+name = "template-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiogram>=3.31.0",
+    "python-dotenv>=1.2.4",
+    "tortoise-orm>=1.1.9",
+]
+
+[dependency-groups]
+dev = [
+    "black>=26.10.1",
+    "ruff>=0.17.2",
+]
+
+[tool.tortoise]
+tortoise_orm = "src.config.TORTOISE_ORM"
